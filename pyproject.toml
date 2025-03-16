@@ -1,0 +1,23 @@
+# SPDX-FileCopyrightText: Greg Back <git@gregback.net>
+# SPDX-License-Identifier: MIT
+
+[project]
+name = "anki-temps"
+version = "0.1.0"
+description = "Create Anki decks for Celsius↔Fahrenheit conversions"
+authors = [
+    {name = "Greg Back",email = "git@gregback.net"}
+]
+license = {text = "MIT"}
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "genanki (>=0.13.1,<0.14.0)"
+]
+
+[tool.poetry]
+package-mode = false
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
